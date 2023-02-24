@@ -12,5 +12,4 @@ public class AddEmployeeTest extends BaseClass {
         System.out.println("New Employee ID: " + addEmployeePage.employeeId.getAttribute("value"));
         addEmployeePage.addEmployee("empFirstname", "empLastname", "filePath"); // This method will add a new employee
     }
-
 }
