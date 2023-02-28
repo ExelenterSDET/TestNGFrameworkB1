@@ -2,6 +2,7 @@ package com.exelenter.testcases;
 
 import com.exelenter.base.BaseClass;
 import com.exelenter.utils.ConfigsReader;
+import com.exelenter.utils.Constants;
 import com.exelenter.utils.ExcelUtility;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -86,8 +87,7 @@ public class AddEmployeeFromExcel extends BaseClass {
     // 2nd way: How to read data from Excel
     @DataProvider(name = "readFromExcel")
     public Object[][] getDataFromExcel() {
-        String absolutePath = ExcelUtility.projectPath + "/testData/ExelenterEmployeesList.xlsx";  //Don't forget slash in front of testData
-        return ExcelUtility.readFromExcel(absolutePath, "Employee");
+        return ExcelUtility.readFromExcel(Constants.TESTDATA_FILEPATH, "Employee");
     }
 
     // By using your knowledge of Java, Selenium, and TestNG - you just retrieved data from an Excel file and stored in a remote Database. <== This is a milestone. Great Job!

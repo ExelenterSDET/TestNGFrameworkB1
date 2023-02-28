@@ -292,8 +292,7 @@ public class CommonMethods extends PageInitializer {
     }
 
     /**
-     * Method will take a screenshot when called. Extension defined as .png (You can change to .jpeg from CommonMethods when needed)
-     *
+     * This method will take a screenshot using older version of Selenium (v3). Extension defined as .png (You can change to .jpeg from CommonMethods when needed)
      * @param fileName String as screenshot name
      */
     public static String takeScreenshot(String fileName) {
@@ -304,6 +303,22 @@ public class CommonMethods extends PageInitializer {
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("Screenshot is not taken");
+        }
+        return fileName;
+    }
+
+    /**
+     * This method will take a screenshot based on the given web element
+     * @param element which its screenshot needs to be taken
+     * @param fileName screenshot file name, Defaulted to .png format (can be changed to .jpeg within the method if needed).
+     * @return .png file as a String
+     */
+    public static String takeScreenshot(WebElement element, String fileName) {
+        File sourceFile = element.getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(sourceFile, new File("screenshots/" + fileName + "_" + getTimeStamp() + ".png"));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return fileName;
     }
@@ -323,17 +338,9 @@ public class CommonMethods extends PageInitializer {
         return passWord;
     }
 
-    /**
-     * This method will return current date and time. Can be appended to Screenshots if needed.
-     *
-     * @return
-     */
     public static String getTimeStamp() {
         Date date = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd_HH_mm_ss_SS");
-        //System.out.println(simpleDateFormat.format(date.getTime())); // todo Start as VOID, then return as String.
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd_HH_mm_ss_SS"); // YYYY-MM-DD_Hour_Min_Sec_Milliseconds
         return simpleDateFormat.format(date.getTime());
     }
-
-
 }
