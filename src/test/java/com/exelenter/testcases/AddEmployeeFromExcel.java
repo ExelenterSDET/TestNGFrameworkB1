@@ -7,6 +7,9 @@ import com.exelenter.utils.ExcelUtility;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.util.List;
+import java.util.Map;
+
 import static org.testng.Assert.assertEquals;
 
 /*
@@ -89,6 +92,11 @@ public class AddEmployeeFromExcel extends BaseClass {
     public Object[][] getDataFromExcel() {
         return ExcelUtility.readFromExcel(Constants.TESTDATA_FILEPATH, "Employee");
     }
+
+//    @DataProvider(name = "readExcelMaps")
+//    public List<Map<String, String>> readFromExcelMaps() {
+//        return ExcelUtility.excelToMaps(Constants.TESTDATA_FILEPATH, "Employee");
+//    }
 
     // By using your knowledge of Java, Selenium, and TestNG - you just retrieved data from an Excel file and stored in a remote Database. <== This is a milestone. Great Job!
 }
