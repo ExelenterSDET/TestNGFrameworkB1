@@ -2,49 +2,52 @@
 <testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-27T20:16:47 MST" name="Smoke Test Suite" finished-at="2023-02-27T20:17:03 MST" duration-ms="16019">
+  <suite started-at="2023-03-18T09:04:30 MDT" name="Smoke Test Suite" finished-at="2023-03-18T09:04:48 MDT" duration-ms="18040">
     <groups>
       <group name="smoke">
-        <method signature="LoginTest.validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" name="validAdminLogin" class="com.exelenter.testcases.LoginTest"/>
-        <method signature="LoginTest.validUserEmptyPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" name="validUserEmptyPassword" class="com.exelenter.testcases.LoginTest"/>
-        <method signature="LoginTest.validUserInvalidPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" name="validUserInvalidPassword" class="com.exelenter.testcases.LoginTest"/>
+        <method signature="LoginTest.validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" name="validAdminLogin" class="com.exelenter.testcases.LoginTest"/>
+        <method signature="LoginTest.validUserEmptyPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" name="validUserEmptyPassword" class="com.exelenter.testcases.LoginTest"/>
+        <method signature="LoginTest.validUserInvalidPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" name="validUserInvalidPassword" class="com.exelenter.testcases.LoginTest"/>
       </group> <!-- smoke -->
+      <group name="singleTest">
+        <method signature="LoginTest.validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" name="validAdminLogin" class="com.exelenter.testcases.LoginTest"/>
+      </group> <!-- singleTest -->
     </groups>
-    <test started-at="2023-02-27T20:16:47 MST" name="Smoke Test" finished-at="2023-02-27T20:17:03 MST" duration-ms="16019">
+    <test started-at="2023-03-18T09:04:30 MDT" name="Smoke Test" finished-at="2023-03-18T09:04:48 MDT" duration-ms="18040">
       <class name="com.exelenter.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" started-at="2023-02-27T20:16:48 MST" name="setUp" finished-at="2023-02-27T20:16:51 MST" duration-ms="2947" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T09:04:30 MDT" name="setUp" finished-at="2023-03-18T09:04:35 MDT" duration-ms="4359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" started-at="2023-02-27T20:16:51 MST" name="validAdminLogin" finished-at="2023-02-27T20:16:52 MST" duration-ms="987" status="PASS">
+        <test-method signature="validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T09:04:35 MDT" name="validAdminLogin" finished-at="2023-03-18T09:04:36 MDT" duration-ms="949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validAdminLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" started-at="2023-02-27T20:16:52 MST" name="tearDown" finished-at="2023-02-27T20:16:54 MST" duration-ms="2120" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T09:04:36 MDT" name="tearDown" finished-at="2023-03-18T09:04:38 MDT" duration-ms="2501" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" started-at="2023-02-27T20:16:54 MST" name="setUp" finished-at="2023-02-27T20:16:56 MST" duration-ms="2444" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T09:04:38 MDT" name="setUp" finished-at="2023-03-18T09:04:40 MDT" duration-ms="2230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validUserEmptyPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" started-at="2023-02-27T20:16:56 MST" name="validUserEmptyPassword" finished-at="2023-02-27T20:16:56 MST" duration-ms="158" status="PASS">
+        <test-method signature="validUserEmptyPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T09:04:40 MDT" name="validUserEmptyPassword" finished-at="2023-03-18T09:04:41 MDT" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserEmptyPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" started-at="2023-02-27T20:16:56 MST" name="tearDown" finished-at="2023-02-27T20:16:58 MST" duration-ms="2132" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T09:04:41 MDT" name="tearDown" finished-at="2023-03-18T09:04:43 MDT" duration-ms="2388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" started-at="2023-02-27T20:16:58 MST" name="setUp" finished-at="2023-02-27T20:17:01 MST" duration-ms="2209" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T09:04:43 MDT" name="setUp" finished-at="2023-03-18T09:04:45 MDT" duration-ms="2296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validUserInvalidPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" started-at="2023-02-27T20:17:01 MST" name="validUserInvalidPassword" finished-at="2023-02-27T20:17:01 MST" depends-on-methods="com.exelenter.testcases.LoginTest.validUserEmptyPassword" duration-ms="703" status="PASS">
+        <test-method signature="validUserInvalidPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T09:04:45 MDT" name="validUserInvalidPassword" finished-at="2023-03-18T09:04:46 MDT" depends-on-methods="com.exelenter.testcases.LoginTest.validUserEmptyPassword" duration-ms="539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@4b0b0854]" started-at="2023-02-27T20:17:01 MST" name="tearDown" finished-at="2023-02-27T20:17:03 MST" duration-ms="2117" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T09:04:46 MDT" name="tearDown" finished-at="2023-03-18T09:04:48 MDT" duration-ms="2385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

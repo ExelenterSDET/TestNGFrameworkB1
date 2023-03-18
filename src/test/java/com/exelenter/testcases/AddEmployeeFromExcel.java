@@ -87,16 +87,12 @@ public class AddEmployeeFromExcel extends BaseClass {
         };
     }
 
-    // 2nd way: How to read data from Excel
+    // 2nd way: Reading data from Excel
     @DataProvider(name = "readFromExcel")
     public Object[][] getDataFromExcel() {
         return ExcelUtility.readFromExcel(Constants.TESTDATA_FILEPATH, "Employee");
     }
 
-//    @DataProvider(name = "readExcelMaps")
-//    public List<Map<String, String>> readFromExcelMaps() {
-//        return ExcelUtility.excelToMaps(Constants.TESTDATA_FILEPATH, "Employee");
-//    }
 
     // By using your knowledge of Java, Selenium, and TestNG - you just retrieved data from an Excel file and stored in a remote Database. <== This is a milestone. Great Job!
 }
