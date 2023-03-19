@@ -51,11 +51,14 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M9</version>
+                    <version>3.0.0</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>smoke.xml</suiteXmlFile>
+<!--                            <suiteXmlFile>smoke.xml</suiteXmlFile>-->
 <!--                            <suiteXmlFile>regression.xml</suiteXmlFile>-->
+                            <!--Parameterizing xml files. You can run any xml file using below code.  -->
+                            <!--In command line type this, without quotes: "mvn test -Dfilename=smoke.xml"  -->
+                            <suiteXmlFile>${filename}</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
