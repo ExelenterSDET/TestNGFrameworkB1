@@ -1,8 +1,9 @@
 # Selenium-TestNG-Framework
 
-This framework is updated to support Selenium 4.15
+This framework is updated to support Selenium 4.15 <br>
 I made updates only to the LoginTest Class (located in 'testcases' package)
 - All test cases are functioning within the class, and all tests pass.
+- ![image](src/test/resources/configs/loginTestsPass.jpg)
 
 You can make changes (updates) to other test case classes as needed.
 
