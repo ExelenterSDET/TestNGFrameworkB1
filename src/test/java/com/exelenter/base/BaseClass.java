@@ -30,7 +30,7 @@ public class BaseClass extends CommonMethods {
 
         switch (ConfigsReader.getProperties("browser").toLowerCase()) {
             case "chrome" -> {
-                System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
+//                System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);  // This is no longer needed as of Selenium 4.12 and later. (You can delete this entire line in your local machine)
                 if (headless.equalsIgnoreCase("true")) {
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--headless", "--log-level=3");          // <== Run in headless mode
@@ -40,7 +40,6 @@ public class BaseClass extends CommonMethods {
                 }
             }
             case "firefox" -> {
-                System.setProperty("webdriver.gecko.driver", Constants.GECKO_DRIVER_PATH);
                 if (headless.equalsIgnoreCase("true")) {
                     FirefoxOptions options = new FirefoxOptions();
                     options.addArguments("--headless");
@@ -51,7 +50,6 @@ public class BaseClass extends CommonMethods {
             }
 
             case "edge" -> {
-                System.setProperty("webdriver.edge.driver", Constants.EDGE_DRIVER_PATH);
                 if (headless.equalsIgnoreCase("true")) {
                     EdgeOptions options = new EdgeOptions();
                     options.addArguments("--headless");
@@ -60,7 +58,6 @@ public class BaseClass extends CommonMethods {
                     driver = new EdgeDriver();              // <== if headless=false this line will run
                 }
             }
-
 
             default -> throw new RuntimeException("Browser is not supported");
         }

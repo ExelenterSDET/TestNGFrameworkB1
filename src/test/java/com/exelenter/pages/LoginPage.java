@@ -12,19 +12,24 @@ public class LoginPage extends BaseClass {
     // LoginPage using PageFactory
     //@FindBy() == driver.findElement()
 
-    @FindBy(id = "txtUsername")                 //  locating by ID
+    @FindBy(name = "username")                 //  locating by ID
     public WebElement username;
 
-    @FindBy(name = "txtPassword")               // locating by Name
+    @FindBy(name = "password")               // locating by Name
     public WebElement password;
 
-    @FindBy(xpath = "//input[@id='btnLogin']") // Locating by xPath
+    @FindBy(xpath = "//button[@type='submit']") // Locating by xPath
     public WebElement loginBtn;
 
     @FindBy(css = "#divLogo img")
     public WebElement homepageLogo;
-    @FindBy(id = "spanMessage")
+    @FindBy(xpath = "//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")
     public WebElement loginErrorMessage;
+
+    @FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']")
+    public WebElement usernameBlankErrorMessage;
+    @FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']")
+    public WebElement passwordBlankErrorMessage;
 
 
     public LoginPage(){
