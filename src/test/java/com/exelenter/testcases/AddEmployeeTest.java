@@ -5,7 +5,7 @@ import com.exelenter.utils.ConfigsReader;
 import org.testng.annotations.Test;
 
 public class AddEmployeeTest extends BaseClass {
-    @Test(groups = {"smoke", "regression"}, enabled = false)
+    @Test(groups = {"smoke", "regression"}, enabled = false) // Todo: IF "enabled=false" TEST WILL NOT RUN
     public void addEmployeeTest() {
         loginPage.loginToWebsite(ConfigsReader.getProperties("username"), ConfigsReader.getProperties("password"));
         pimPage.navigateToAddEmployee();

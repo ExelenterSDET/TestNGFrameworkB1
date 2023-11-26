@@ -17,6 +17,9 @@ _**The framework is pointing to a new URL because the old URL is no longer worki
 - Removed WebDriverManager dependency from the POM <br>
 - Updated some web locators (pointing to new URL)
 
+To run tests from the command line within the Intellij, pass the following line to IntelliJ Terminal:<br>
+***mvn test -Dfilename=smoke.xml***
+
 **Notes:** New URL randomly switches to Spanish language by default. If this happens, test validations will fail since they are written to validate English version of the website.<br>
 
 If this happens, here are instructions on how to fix it:

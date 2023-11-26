@@ -1,53 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-18T21:35:13 MDT" name="Smoke Test Suite" finished-at="2023-03-18T21:35:30 MDT" duration-ms="16445">
+  <suite started-at="2023-11-26T13:39:55 PST" name="Smoke Test Suite" finished-at="2023-11-26T13:40:22 PST" duration-ms="27289">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" name="validAdminLogin" class="com.exelenter.testcases.LoginTest"/>
+      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="LoginTest.validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" name="validAdminLogin" class="com.exelenter.testcases.LoginTest"/>
-        <method signature="LoginTest.validUserEmptyPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" name="validUserEmptyPassword" class="com.exelenter.testcases.LoginTest"/>
-        <method signature="LoginTest.validUserInvalidPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" name="validUserInvalidPassword" class="com.exelenter.testcases.LoginTest"/>
+        <method signature="LoginTest.validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" name="validAdminLogin" class="com.exelenter.testcases.LoginTest"/>
+        <method signature="LoginTest.validUserEmptyPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" name="validUserEmptyPassword" class="com.exelenter.testcases.LoginTest"/>
+        <method signature="LoginTest.validUserInvalidPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" name="validUserInvalidPassword" class="com.exelenter.testcases.LoginTest"/>
       </group> <!-- smoke -->
       <group name="singleTest">
-        <method signature="LoginTest.validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" name="validAdminLogin" class="com.exelenter.testcases.LoginTest"/>
+        <method signature="LoginTest.validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" name="validAdminLogin" class="com.exelenter.testcases.LoginTest"/>
       </group> <!-- singleTest -->
     </groups>
-    <test started-at="2023-03-18T21:35:13 MDT" name="Smoke Test" finished-at="2023-03-18T21:35:30 MDT" duration-ms="16445">
+    <test started-at="2023-11-26T13:39:55 PST" name="Smoke Test" finished-at="2023-11-26T13:40:22 PST" duration-ms="27289">
       <class name="com.exelenter.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T21:35:14 MDT" name="setUp" finished-at="2023-03-18T21:35:18 MDT" duration-ms="4026" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" started-at="2023-11-26T13:39:55 PST" name="setUp" finished-at="2023-11-26T13:40:01 PST" duration-ms="6280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T21:35:18 MDT" name="validAdminLogin" finished-at="2023-03-18T21:35:19 MDT" duration-ms="1387" status="PASS">
+        <test-method signature="validAdminLogin()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" started-at="2023-11-26T13:40:01 PST" name="validAdminLogin" finished-at="2023-11-26T13:40:03 PST" duration-ms="1906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validAdminLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T21:35:19 MDT" name="tearDown" finished-at="2023-03-18T21:35:21 MDT" duration-ms="2150" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" started-at="2023-11-26T13:40:03 PST" name="tearDown" finished-at="2023-11-26T13:40:05 PST" duration-ms="2098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T21:35:21 MDT" name="setUp" finished-at="2023-03-18T21:35:23 MDT" duration-ms="1904" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" started-at="2023-11-26T13:40:05 PST" name="setUp" finished-at="2023-11-26T13:40:11 PST" duration-ms="5436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validUserEmptyPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T21:35:23 MDT" name="validUserEmptyPassword" finished-at="2023-03-18T21:35:23 MDT" duration-ms="131" status="PASS">
+        <test-method signature="validUserEmptyPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" started-at="2023-11-26T13:40:11 PST" name="validUserEmptyPassword" finished-at="2023-11-26T13:40:11 PST" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserEmptyPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T21:35:23 MDT" name="tearDown" finished-at="2023-03-18T21:35:25 MDT" duration-ms="2151" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" started-at="2023-11-26T13:40:11 PST" name="tearDown" finished-at="2023-11-26T13:40:13 PST" duration-ms="2087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T21:35:25 MDT" name="setUp" finished-at="2023-03-18T21:35:27 MDT" duration-ms="1763" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" started-at="2023-11-26T13:40:13 PST" name="setUp" finished-at="2023-11-26T13:40:19 PST" duration-ms="5308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validUserInvalidPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T21:35:27 MDT" name="validUserInvalidPassword" finished-at="2023-03-18T21:35:28 MDT" depends-on-methods="com.exelenter.testcases.LoginTest.validUserEmptyPassword" duration-ms="678" status="PASS">
+        <test-method signature="validUserInvalidPassword()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" started-at="2023-11-26T13:40:19 PST" name="validUserInvalidPassword" finished-at="2023-11-26T13:40:20 PST" depends-on-methods="com.exelenter.testcases.LoginTest.validUserEmptyPassword" duration-ms="1537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@1817d444]" started-at="2023-03-18T21:35:28 MDT" name="tearDown" finished-at="2023-03-18T21:35:30 MDT" duration-ms="2145" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.testcases.LoginTest@a9cd3b1]" started-at="2023-11-26T13:40:20 PST" name="tearDown" finished-at="2023-11-26T13:40:22 PST" duration-ms="2094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
